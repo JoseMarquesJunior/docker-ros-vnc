@@ -133,6 +133,9 @@ USER root
 RUN pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.11.0-cp27-none-linux_x86_64.whl && \
     pip install keras==2.2.4 matplotlib pandas scipy h5py testresources scikit-learn
 
+# Install Jupyter notebook
+RUN pip install jupyter
+
 # Expose Tensorboard
 EXPOSE 6006
 
